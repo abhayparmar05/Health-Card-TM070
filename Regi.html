@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration</title>
+</head>
+<style>
+    textarea{
+        resize: none;
+    }
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+        -webkit-appearance: none; 
+        margin: 0; 
+    }
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="nav0">
+                <div class="nav1"><a href="HomeA.html"><lable class="nav222"><i class="fa fa-medkit" aria-hidden="true"></i></lable></a></div><div class="nav2">
+                <a href="HomeA.html"><lable class="nav333">HOME</lable></a>
+                <a href="contact.html"><lable class="nav333">CONTACT</lable></a>
+                <a href="temp.html"><lable class="nav333">ABOUT</lable></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="midda0"><img src="bannerU.jpeg" class="forbanner">
+    </div>
+    <div class="wholeR">
+        <table cellspacing="12" class="regit">
+            <form action="http://localhost:3000/register" method="post">
+                <tr>
+                    <td class="forttd">Enter Id :</td>
+                    <td class="td1"><input class="ip123" type="text" placeholder="Enter Id" name="id"></td>
+                </tr>
+                <tr>
+                    <td class="forttd">Enter First Name :</td>
+                    <td class="td1"><input class="ip123" type="text" placeholder="Enter First Name" name="first_name"></td>
+                </tr>
+                <tr>
+                    <td class="forttd">Enter Last Name :</td>
+                    <td class="td1"><input class="ip123" type="text" placeholder="Enter Last Name" name="last_name"></td>
+                </tr>
+                <tr>
+                    <td class="forttd">Enter DOB :</td>
+                    <td class="td1"><input class="ip123" type="date" name="DOB"></td>
+                </tr>
+                <tr>
+                    <td class="forttd">Enter Gender :</td>
+                    <td class="td1">
+                        <input type="radio" name="Gender" value="Male" class="radiobt"><lable class="radimain">  Male</lable>
+                        <input type="radio" name="Gender" value="Female" class="radiobt"><lable class="radimain">  Female</lable>
+                        <input type="radio" name="Gender" value="Other" class="radiobt"><lable class="radimain">  Other</lable>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="forttd">Enter Adharcard Id :</td>
+                    <td class="td1"><input class="ip123" type="text" placeholder="Enter Adharcard Id" name="Adharcard" maxlength="12"></td>
+                </tr>
+                <tr>
+                    <td class="forttd">Enter Mobile No1 :</td>
+                    <td class="td1"><input class="ip123" type="text" placeholder="Enter Mobile No1" name="phoneNO1" maxlength="10"></td>
+                </tr>
+                <tr>
+                    <td class="forttd">Enter Mobile No2 :</td>
+                    <td class="td1"><input class="ip123" type="text" placeholder="Enter Mobile No2 " name="phoneNO2" maxlength="10"></td>
+                </tr>
+                <tr>
+                    <td class="forttd">Enter Email :</td>
+                    <td class="td1"><input class="ip123" type="email" placeholder="Enter Email" name="Email"></td>
+                </tr>
+                <tr>
+                    <td class="forttd">Enter Blood Group :</td>
+                    <td class="td1">
+                        <select name="BloodGRP">
+                            <option value="0">Select Blood Group</option>
+                            <option value="Ap">A+</option>
+                            <option value="Op">O+</option>
+                            <option value="Bp">B+</option>
+                            <option value="ABp">AB+</option>
+                            <option value="An">A-</option>
+                            <option value="On">O-</option>
+                            <option value="Bn">B-</option>
+                            <option value="ABn">AB-</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="forttd">Enter Address :</td>
+                    <td class="td1">
+                        <textarea name="address"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="forttd">Enter Pincode :</td>
+                    <td class="td1"><input class="ip123" type="text" placeholder="Pincode" name="Pincode" maxlength="6"></td>
+                </tr>
+                <tr>
+                    <td class="forttd">Set Password :</td>
+                    <td class="td1"><input class="ip123" type="password" placeholder="Enter Password" name="passwords"></td>
+                </tr>
+                <tr>
+                    <td class="forttd">Upload Photo :</td>
+                    <td class="td1"><input id="uphotoid" type="file" accept="image/*" onchange="upload()" name="photo" value="photo"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><button class="llb0">Register</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="reset" class="llb0" value="Reset">
+                    </td>
+                </tr>
+                
+            </form>
+        </table>
+    </div>
+    <footer>
+    <div class="fotr0"><p><label class="fot1">Help</label><br><label class="fot2">Customer care: +91XXXXXXXXXX</p>
+    </label>
+    </div>
+    </footer>
+</body>
+</html>

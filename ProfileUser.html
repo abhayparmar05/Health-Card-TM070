@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Profile User</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="davidshimjs-qrcodejs-04f46c6\jquery.min.js"></script>
+    <script type="text/javascript" src="davidshimjs-qrcodejs-04f46c6\qrcode.min.js"></script>
+    <script type="text/javascript" src="davidshimjs-qrcodejs-04f46c6\qrcode.min.js"></script>
+<style>
+        table.tablepu1{
+            margin : auto;
+            padding: auto;
+            font-size: large;
+            align-content: center;
+            border: 2px solid black;
+        }
+        #profile{
+            height: 16vh;
+            border-radius: 50%;
+        }
+        #qr{
+            border: 2px solid black;
+        }
+</style>
+</head>
+
+<body>
+    <div class="whole">
+        <header>
+            <nav>
+                <div class="nav0">
+                    <div class="nav1"><a href="HomeA.html"><lable class="nav222"><i class="fa fa-medkit" aria-hidden="true"></i></lable></a></div><div class="nav2">
+                    <a href="HomeA.html"><lable class="nav333">HOME</lable></a>
+                    <a href="contact.html"><lable class="nav333">CONTACT</lable></a>
+                    <a href="about.html"><lable class="nav333">ABOUT</lable></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="midda0"><img src="bannerU.jpeg" class="forbanner">
+        </div>
+        <div class="middb0">
+            <table cellspacing="22" class="tablepu1">
+                <tr>
+                    <td rowspan="2">
+                        <img id="profile" src="profile.jfif" alt="Profile User">
+                    </td>
+                    <td></td>
+                    <td>id</td>
+                    <td>5</td>
+                    <td></td>
+                    <td rowspan="6">
+                    <a href="DoctorSide.html"><div class="qrclass" id="qrcode"></div></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        Email
+                    </td>
+                    <td>adam05@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>First Name</td>
+                    <td>Adam</td>
+                    <td>Last Name</td>
+                    <td>Sendler</td>
+                </tr>
+
+                <tr>
+                    <td>Date of Birth</td>
+                    <td>05-12-2003</td>
+                    <td>Blood group</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <td>Phone Number</td>
+                    <td>7801921222</td>
+                    <td>Phone Number2</td>
+                    <td>7801926453</td>
+                </tr>
+                <tr>
+
+                    <td>Address</td>
+                    <td>Ny street-2, near central park, New york</td>
+                    <td>Pincode</td>
+                    <td>235342</td>
+                </tr>
+            </table>
+        </div>
+        <div class="middc0">
+        </div>
+        <footer>
+            <div class="fot0pu">
+                <p><label class="fot1">Help</label><br><label class="fot2">Customer care: +91XXXXXXXXXX</p>
+                </label>
+            </div>
+        </footer>
+    </div>
+</body>
+<script>
+new QRCode(document.getElementById("qrcode"),"http://localhost:3000/select");
+</script>
+</html>
+<!-- https://www.google.co.in/ -->
